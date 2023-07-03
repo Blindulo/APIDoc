@@ -9,7 +9,7 @@ PATH:https://XXX
 POST PATH/v1/users/register
 **request**
 
-```json
+```js
 {
     username: string,
     password: string,
@@ -24,7 +24,7 @@ POST PATH/v1/users/register
 GET PATH/v1/users/login
 **request**
 
-```json
+```js
 {
     username: string,
     password: string,
@@ -33,7 +33,7 @@ GET PATH/v1/users/login
 
 **response**
 
-```json
+```js
 {
     profile: {
         //存储用户个人信息
@@ -53,7 +53,7 @@ GET PATH/v1/users/login
 GET PATH/v1/users/reset
 **request**
 
-```json
+```js
 {
     username: string,
 }
@@ -67,7 +67,7 @@ GET PATH/v1/users/reset
 PUT PATH/v1/users/register
 **request**
 
-```json
+```js
 {
     username: string,
     password: string,
@@ -84,7 +84,7 @@ PUT PATH/v1/users/register
 POST PATH/v1/works/generate
 **request**
 
-```json
+```js
 {
     generateImageUri: string,
     prompt: string,
@@ -96,7 +96,7 @@ POST PATH/v1/works/generate
 
 **response**
 
-```json
+```js
 {
     convertedImageUris: Array<string>,
 }
@@ -107,7 +107,7 @@ POST PATH/v1/works/generate
 POST PATH/v1/works/seal
 **request**
 
-```json
+```js
 {
     sealImageUri: string,
     sealType: string (?number?),
@@ -123,7 +123,7 @@ POST PATH/v1/works/seal
 
 **response**
 
-```json
+```js
 {
     processedImageUri: string,
 }
