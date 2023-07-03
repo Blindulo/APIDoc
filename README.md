@@ -1,12 +1,13 @@
 # APIDoc
 
-PATH:https://XXX
+PATH: https://XXX
 
 ## 用户
 
 ### 注册
 
 POST PATH/v1/users/register
+
 **request**
 
 ```js
@@ -17,11 +18,13 @@ POST PATH/v1/users/register
 ```
 
 **response**
+
 邮箱验证
 
 ### 登录
 
 GET PATH/v1/users/login
+
 **request**
 
 ```js
@@ -51,6 +54,7 @@ GET PATH/v1/users/login
 ### 忘记密码
 
 GET PATH/v1/users/reset
+
 **request**
 
 ```js
@@ -60,11 +64,13 @@ GET PATH/v1/users/reset
 ```
 
 **response**
+
 发个重设密码邮件
 
 ### 重设密码
 
 PUT PATH/v1/users/register
+
 **request**
 
 ```js
@@ -75,6 +81,7 @@ PUT PATH/v1/users/register
 ```
 
 **response**
+
 和 login 的一样
 
 ## 作品
@@ -82,6 +89,7 @@ PUT PATH/v1/users/register
 ### 转换
 
 POST PATH/v1/works/generate
+
 **request**
 
 ```js
@@ -105,6 +113,7 @@ POST PATH/v1/works/generate
 ### 印章
 
 POST PATH/v1/works/seal
+
 **request**
 
 ```js
